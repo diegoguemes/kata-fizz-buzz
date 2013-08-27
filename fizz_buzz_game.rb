@@ -9,8 +9,7 @@ class FizzBuzzGame
     @words.each do |word|
       result << word.say(number)
     end
-    result == ''  ?
-        number.to_s :
-        result
+    return number.to_s if result == ''
+    return result
   end
 end
