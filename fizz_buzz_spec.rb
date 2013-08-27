@@ -26,6 +26,6 @@ describe 'FizzBuzz' do
   end
 
   it 'says the number when number is not divisible by 3 or 5' do
-    @fizz_buzz.play(13).should eq('13')
+    @fizz_buzz.play(11).should eq('11')
   end
 end

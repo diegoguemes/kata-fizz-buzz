@@ -14,7 +14,7 @@ class FizzBuzz
   end
 
   def is_fizz(number)
-    number % 3 == 0
+    number % 3 == 0 || number.to_s.include?('3')
   end
 
   def is_buzz(number)
