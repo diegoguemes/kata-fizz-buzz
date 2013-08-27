@@ -8,6 +8,8 @@ class FizzBuzz
     if number % 5 == 0
       result << 'Buzz'
     end
-    return result
+    return result == ''  ?
+        number.to_s :
+        result
   end
 end
