@@ -20,4 +20,8 @@ describe 'FizzBuzz' do
   it 'appends words when number is divisible by different numbers' do
     @fizz_buzz.play(15).should eq('FizzBuzz')
   end
+
+  it 'says the number when number is not divisible by 3 or 5' do
+    @fizz_buzz.play(13).should eq('13')
+  end
 end
