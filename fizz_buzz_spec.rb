@@ -18,9 +18,15 @@ describe 'FizzBuzz' do
     end
   end
 
-  it 'says Buzz when number is divisible by 5' do
-    @fizz_buzz.play(5).should eq('Buzz')
-    @fizz_buzz.play(10).should eq('Buzz')
+  describe 'says Buzz when number' do
+    it 'is divisible by 5' do
+      @fizz_buzz.play(5).should eq('Buzz')
+      @fizz_buzz.play(10).should eq('Buzz')
+    end
+
+    it 'contains a 5' do
+      @fizz_buzz.play(52).should eq('Buzz')
+    end
   end
 
   it 'appends words when number satisfies different rules' do
