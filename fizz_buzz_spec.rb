@@ -16,4 +16,8 @@ describe 'FizzBuzz' do
     @fizz_buzz.play(5).should eq('Buzz')
     @fizz_buzz.play(10).should eq('Buzz')
   end
+
+  it 'appends words when number is divisible by different numbers' do
+    @fizz_buzz.play(15).should eq('FizzBuzz')
+  end
 end
