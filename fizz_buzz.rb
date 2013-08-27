@@ -18,7 +18,7 @@ class FizzBuzz
   end
 
   def is_buzz(number)
-    number % 5 == 0
+    number % 5 == 0 || number.to_s.include?('5')
   end
 
   private :is_fizz, :is_buzz
