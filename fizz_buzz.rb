@@ -1,6 +1,9 @@
 class FizzBuzz
 
   def play(number)
-    'Fizz'
+    if number % 3 == 0
+      return 'Fizz'
+    end
+    return 'Buzz'
   end
 end
