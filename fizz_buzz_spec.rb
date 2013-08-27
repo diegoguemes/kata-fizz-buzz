@@ -1,4 +1,5 @@
 require 'rspec'
+require './fizz_buzz'
 
 describe 'FizzBuzz' do
 
