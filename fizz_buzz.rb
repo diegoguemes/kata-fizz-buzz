@@ -2,14 +2,25 @@ class FizzBuzz
 
   def play(number)
     result = ''
-    if number % 3 == 0
+    if is_fizz(number)
       result << 'Fizz'
     end
-    if number % 5 == 0
+    if is_buzz(number)
       result << 'Buzz'
     end
-    return result == ''  ?
+    result == ''  ?
         number.to_s :
         result
   end
+
+  def is_fizz(number)
+    number % 3 == 0
+  end
+
+  def is_buzz(number)
+    number % 5 == 0
+  end
+
+  private :is_fizz, :is_buzz
+
 end
