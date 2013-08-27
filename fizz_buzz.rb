@@ -14,13 +14,17 @@ class FizzBuzz
   end
 
   def is_fizz(number)
-    number % 3 == 0 || number.to_s.include?('3')
+    satisfies_fizz_buzz_rule(number, 3)
   end
 
   def is_buzz(number)
-    number % 5 == 0 || number.to_s.include?('5')
+    satisfies_fizz_buzz_rule(number, 5)
   end
 
-  private :is_fizz, :is_buzz
+  def satisfies_fizz_buzz_rule(number, rule_number)
+    number % rule_number == 0 || number.to_s.include?(rule_number.to_s)
+  end
+
+  private :is_fizz, :is_buzz, :satisfies_fizz_buzz_rule
 
 end

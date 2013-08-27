@@ -4,7 +4,7 @@ require './fizz_buzz'
 describe 'FizzBuzz' do
 
   before :each do
-    @fizz_buzz =FizzBuzz.new
+    @fizz_buzz = FizzBuzz.new
   end
 
   describe 'says Fizz when number' do
