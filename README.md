@@ -34,4 +34,4 @@ Stage 2 - new requirements
 
 ----------------------------------------------------------------------------
 
-Enlace con la información original: http://www.codingdojo.org/cgi-bin/wiki.pl?KataFizzBuzz
+Enlace con la informaciÃ³n original: http://www.codingdojo.org/cgi-bin/wiki.pl?KataFizzBuzz
